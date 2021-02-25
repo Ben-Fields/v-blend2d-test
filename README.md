@@ -8,7 +8,7 @@
 ### Instructions
 ```
 cd ./blend2d/build
-cmake ../c -DCMAKE_BUILD_TYPE=Release -DASMJIT_DIR="../asmjit"
+cmake ../c -DCMAKE_BUILD_TYPE=Release -DASMJIT_DIR="../asmjit" -DCMAKE_C_STANDARD=99 -DCMAKE_C_FLAGS="-std=gnu99 ${CMAKE_C_FLAGS}"
 cmake --build . --config Release
 
 cd ../..
