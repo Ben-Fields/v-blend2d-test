@@ -1,10 +1,15 @@
 module blend2d
 
+#flag -D BL_STATIC
+
+#flag -L @VROOT/build
 #flag -L @VROOT/build/Release
 #flag -lblend2d
 
 #flag -I @VROOT/c/src
 #include "blend2d.h"
+
+
 
 /* V wrapper for the Blend2D C API.
  *
